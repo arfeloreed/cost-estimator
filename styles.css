@@ -19,6 +19,7 @@ h1 {
     background: #fff;
     width: 100%;
     max-width: 900px;
+    box-sizing: border-box;
     color: rgb(40, 39, 40);
     display: flex;
     flex-direction: column;
@@ -126,7 +127,7 @@ h1 {
 
 .sessions-card .session-number {
     font-size: 2.5rem;
-    color: rgb(113, 39, 161);
+    color: rgb(73, 12, 152);
 }
 
 .description {
@@ -185,4 +186,75 @@ h1 {
     margin: 6px 0 16px;
     font-weight: bold;
     color: rgb(150, 147, 150)
+}
+
+.cards-container {
+    display: flex;
+    margin: 16px 0 32px;
+}
+
+.card {
+    margin: 0 16px;
+    background-color: rgb(253, 242, 253);
+    border-radius: 20px;
+    padding: 16px 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(87, 12, 183);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.7);
+    transition: transform 0.2s ease-out;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.top-section p {
+    margin: 4px 0;
+    text-transform: uppercase;
+}
+
+.top-section .price {
+    color: rgb(40, 39, 40);
+    font-size: 2.5rem;
+}
+
+.top-section .save {
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(53, 10, 74, 1) 36%,
+        rgba(83, 49, 156, 1) 100%
+    );
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    left: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card hr {
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 2px;
+    width: 31%;
+    margin: 24px auto;
+}
+
+.card button {
+    background-color: rgb(61, 12, 124);
+    color: #fff;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.2s ease-out;
+    margin: 8px 0;
+}
+
+.card button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
